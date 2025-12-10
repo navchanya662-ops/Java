@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизація</title>
+    <link rel="stylesheet" href="forms.css">
+    <script src="users.js" defer></script>
+</head>
+<body>
+
+<h2>Авторизація</h2>
+
+<form id="loginForm">
+
+    <label for="loginUsername">Логін:</label>
+    <input type="text" id="loginUsername" required><br><br>
+
+    <label for="loginPassword">Пароль:</label>
+    <input type="password" id="loginPassword" required><br><br>
+
+    <button type="submit">Увійти</button>
+    <button type="reset">Очистити</button>
+</form>
+
+<p id="loginStatus" style="font-weight: bold;"></p>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="forms.css">
+    <script src="users.js" defer></script>
+</head>
+<body>
+
+<h2>Реєстрація космічного експлорера</h2>
+
+<form id="registerForm">
+
+    <label for="username">Логін:</label>
+    <input type="text" id="username" required placeholder="Введіть логін"><br><br>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" required><br><br>
+
+    <label for="bio">Коротка інформація про себе:</label><br>
+    <textarea id="bio" rows="4" cols="40" placeholder="Розкажіть про себе"></textarea><br><br>
+
+    <label>Стать:</label><br>
+    <input type="radio" id="male" name="gender" value="Чоловіча" checked>
+    <label for="male">Чоловіча</label><br>
+
+    <input type="radio" id="female" name="gender" value="Жіноча">
+    <label for="female">Жіноча</label><br><br>
+
+    <label for="role">Роль у екіпажі:</label>
+    <select id="role">
+        <option value="Інженер">Інженер</option>
+        <option value="Пілот">Пілот</option>
+        <option value="Медик">Медик</option>
+    </select><br><br>
+
+    <label for="birthday">Дата народження:</label>
+    <input type="date" id="birthday"><br><br>
+
+    <input type="checkbox" id="agree" required>
+    <label for="agree">Погоджуюсь із правилами місії</label><br><br>
+
+    <button type="submit">Зареєструватися</button>
+    <button type="reset">Очистити форму</button>
+</form>
+
+<p id="result" style="color: green; font-weight: bold;"></p>
+
+</body>
+</html>

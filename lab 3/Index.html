@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Персональна сторінка студента</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+    <h1 id="main-title">Ім'я Прізвище — Персональна сторінка</h1>
+    <p>Студент спеціальності «Комп'ютерні науки». Люблю веброзробку та нові технології.</p>
+    <img src="/photo/my_photo.jpg"
+         alt="Фото студента"
+         title="Моє фото"
+         fetchpriority="high">
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#hobby">Мої хобі</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <article id="about">
+        <h2>Про мене</h2>
+        <p>
+            Мене звати Ім'я Прізвище. Я навчаюсь у закладі вищої освіти за спеціальністю
+            «Комп'ютерні науки». Цікавлюся веброзробкою, створенням інтерфейсів та HTML5-семантикою.
+            У майбутньому прагну працювати фронтенд-розробником.
+        </p>
+    </article>
+
+    <section id="hobby">
+        <h2>Мої хобі</h2>
+
+        <h3>Програмування</h3>
+        <p>Створюю невеликі проєкти на JavaScript та Python.</p>
+
+        <h3>Подорожі</h3>
+        <p>Мрію відвідати Японію та Ісландію.</p>
+
+        <img src="/photo/travel.jpg"
+             alt="Гори під час подорожі"
+             title="Подорожі — моє натхнення"
+             loading="lazy">
+    </section>
+
+    <aside>
+        <h2>Цікаві факти про мене</h2>
+        <ul>
+            <li>Люблю каву та читаю технічну літературу.</li>
+            <li>Маю сторінку з проєктами у GitHub.</li>
+            <li>Цитата, яка надихає: <em>«Той, хто хоче — шукає можливості».</em></li>
+        </ul>
+    </aside>
+
+</main>
+
+<footer id="contacts">
+    <p>Контактний email: <a href="mailto:student@example.com">student@example.com</a></p>
+    <p>&copy; 2025. Персональна сторінка студента.</p>
+</footer>
+
+</body>
+</html>
