@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Лабораторна №12 — Останні пости</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f5f5f5;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    section#latest-posts {
+      margin-top: 1.5rem;
+    }
+
+    #status {
+      margin: 0.5rem 0 1rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    #posts article {
+      border-bottom: 1px solid #ddd;
+      padding: 0.75rem 0;
+    }
+
+    #posts article:last-child {
+      border-bottom: none;
+    }
+
+    #posts h3 {
+      margin: 0 0 0.25rem;
+      font-size: 1rem;
+    }
+
+    #posts p {
+      margin: 0;
+      color: #333;
+    }
+
+    #reload-posts {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      border: 1px solid #007bff;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    #reload-posts:disabled {
+      opacity: 0.7;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Лабораторна робота №12 — асинхронна взаємодія</h1>
+
+    <section id="latest-posts">
+      <h2>Останні пости</h2>
+      <p id="status"></p>
+      <div id="posts"></div>
+      <button id="reload-posts">Оновити пости</button>
+    </section>
+  </main>
+
+  <script src="./dist/types.js"></script>
+  <script src="./dist/postsApi.js"></script>
+  <script src="./dist/index.js"></script>
+</body>
+</html>
+
+</body>
+</html>
