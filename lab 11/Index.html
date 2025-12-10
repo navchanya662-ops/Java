@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Персональна сторінка студента</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <header>
+        <h1 id="main-title">Ім'я Прізвище — Персональна сторінка</h1>
+        <p>Студент спеціальності «Комп'ютерні науки». Цікавлюсь веброзробкою.</p>
+
+        <nav aria-label="Навігація між сторінками" id="mainNav">
+            <a href="login.html" id="linkLogin">Авторизація</a>
+            <a href="register.html" id="linkRegister">Реєстрація</a>
+            <a href="accounts.html" id="linkAccounts">Користувачі</a>
+
+            <span id="userInfo" class="user-info"></span>
+            <button id="logoutGlobal" type="button" class="logout-btn" hidden>Вийти</button>
+        </nav>
+
+        <picture>
+            <source srcset="photo/my_photoa.jpg, photo/my_photob.jpg"
+                    sizes="(max-width: 600px) 100vw,
+                            (max-width: 1024px) 60vw,
+                            400px">
+            <img src="photo/my_photo.jpg"
+                 alt="Пейзаж"
+                 loading="lazy"
+                 class="wide-photo">
+        </picture>
+    </header>
+
+    <main>
+
+        <article id="about" class="card">
+            <h2>Про мене</h2>
+            <p>Я студент спеціальності «Комп'ютерні науки», цікавлюсь веброзробкою та UI/UX.</p>
+            <p>Вивчаю HTML, CSS, JavaScript, TypeScript та основи бекенд-розробки.</p>
+        </article>
+
+        <section id="hobby" class="card">
+            <h2>Мої хобі</h2>
+
+            <h3>Програмування</h3>
+            <p>Створюю невеликі вебзастосунки, експериментую з інтерфейсами та анімаціями.</p>
+
+            <h3>Читання</h3>
+            <p>Улюблені жанри — фантастика, кіберпанк та технотрилери.</p>
+
+            <picture>
+                <source srcset="photo/phototravela.jpg, photo/phototravelb.jpg"
+                        sizes="(max-width: 600px) 100vw, 400px">
+                <img src="photo/travel.jpg"
+                     alt="Подорожі"
+                     loading="lazy"
+                     class="wide-photo">
+            </picture>
+        </section>
+
+        <section id="blog" class="card">
+            <h2>Блог</h2>
+
+            <p id="articleCount"></p>
+
+            <div class="blog-search">
+                <input
+                    id="searchInput"
+                    type="search"
+                    placeholder="Пошук за назвою статті…">
+                <button id="searchBtn" type="button">Знайти статтю</button>
+            </div>
+            <section id="blog-posts"></section>
+            <div id="pagination" class="pagination"></div>
+
+            <hr>
+            <h3>Додати свій пост</h3>
+
+            <form id="postForm" class="post-form">
+                <label>
+                    Заголовок
+                    <input type="text" id="title" required>
+                </label>
+                 <label>
+        Тема / категорія
+        <input type="text" id="category" placeholder="Наприклад: JavaScript, HTML…">
+    </label>
+                <label>
+                    Текст допису
+                    <textarea id="body" rows="4" required></textarea>
+                </label>
+
+                <div class="buttons-row">
+                    <button type="button" id="addPost">Додати пост</button>
+                    <button type="button" id="clearPosts">Очистити пости</button>
+                </div>
+            </form>
+
+            <p id="postsCounter">Усього постів (доданих з форми): 0</p>
+        </section>
+
+    </main>
+
+    <aside class="card">
+        <h2>Цікаві факти</h2>
+        <ul>
+            <li>У вільний час вивчаю сучасні фреймворки фронтенду.</li>
+            <li>Маю профіль на GitHub, де зберігаю свої навчальні проєкти.</li>
+        </ul>
+    </aside>
+
+    <footer id="contacts">
+        <p>Email: <a href="mailto:student@example.com">student@example.com</a></p>
+        <p>&copy; 2025. Персональна сторінка студента.</p>
+    </footer>
+
+</div>
+
+<script src="blog.js"></script>
+<script src="src/main.js"></script>
+<script src="users.js"></script>
+
+</body>
+</html>

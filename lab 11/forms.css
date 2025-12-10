@@ -1,0 +1,163 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: #eef3f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-wrapper {
+    margin: 2rem 1rem;
+    max-width: 480px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.card {
+    background: #ffffff;
+    padding: 1.5rem 1.8rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+
+.card::before {
+    content: "✦";
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    color: #4f84ff;
+}
+
+.card::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 90px;
+    background: #4f84ff;
+    border-radius: 999px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    border-radius: 10px;
+    border: 1px solid #cbd5f5;
+    padding: 0.6rem 0.75rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+    background: #f9fbff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4f84ff;
+    box-shadow: 0 0 0 2px rgba(79, 132, 255, 0.25);
+    background: #ffffff;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 0.65rem 1rem;
+    cursor: pointer;
+    margin-top: 0.2rem;
+}
+
+button[type="submit"] {
+    background: #4f84ff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+button[type="reset"],
+button.secondary {
+    background: #e5ecff;
+    color: #1e3a8a;
+}
+
+button:hover {
+    filter: brightness(1.03);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Валідація */
+
+input.invalid,
+textarea.invalid,
+select.invalid {
+    border-color: #e53935;
+}
+
+input.valid,
+textarea.valid,
+select.valid {
+    border-color: #2ecc71;
+}
+
+.error {
+    min-height: 18px;
+    font-size: 0.8rem;
+    color: #d32f2f;
+}
+
+.info-message {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #1f2937;
+}
+
+.link-home {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: #4f84ff;
+    text-decoration: none;
+}
+
+.link-home:hover {
+    text-decoration: underline;
+}
+
+#welcomeCard h3 {
+    margin-top: 0;
+}
