@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Персональна сторінка студента</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div class="layout">
+
+<header>
+    <h1 id="main-title">Ім'я Прізвище — Персональна сторінка</h1>
+    <p>Студент спеціальності «Комп'ютерні науки». Цікавлюсь веброзробкою.</p>
+
+    <nav aria-label="Навігація між сторінками">
+        <a href="login.html">Авторизація</a>
+        <a href="register.html">Реєстрація</a>
+    </nav>
+
+   <picture>
+    <source srcset="photo/my_photoa.jpg, photomy_photb.jpg"
+            sizes="(max-width: 600px) 100vw, 
+                    (max-width: 1024px) 60vw,
+                    400px">
+    <img src="/photo/my_photo.jpg"
+         alt="Пейзаж"
+         loading="lazy"
+         class="wide-photo">
+</picture>
+</header>
+
+<main>
+
+    <article id="about" class="card">
+        <h2>Про мене</h2>
+        <p>Я студент спеціальності «Комп'ютерні науки», цікавлюсь веброзробкою та UI/UX.</p>
+    </article>
+
+    <section id="hobby" class="card">
+        <h2>Мої хобі</h2>
+
+        <h3>Програмування</h3>
+        <p>Створюю прості вебзастосунки та працюю з інтерфейсами.</p>
+
+        <h3>Читання</h3>
+        <p>Улюблена література — кіберпанк та технотрилери.</p>
+
+        <picture>
+            <source srcset="photo/phototravela.jpg, photo/phototravelb.jpg"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <img src="/photo/travel.jpg"
+                 alt="Пейзаж"
+                 loading="lazy"
+                 class="wide-photo">
+        </picture>
+    </section>
+
+</main>
+
+<aside class="card">
+    <h2>Цікаві факти</h2>
+    <ul>
+        <li>Досліджую сучасний вебдизайн.</li>
+        <li>Маю профіль GitHub.</li>
+    </ul>
+</aside>
+
+<footer id="contacts">
+    <p>Email: <a href="mailto:student@example.com">student@example.com</a></p>
+    <p>&copy; 2025. Персональна сторінка студента.</p>
+</footer>
+
+</div>
+
+</body>
+
+</html>
