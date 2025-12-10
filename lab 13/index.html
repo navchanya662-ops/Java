@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Лабораторна 13 — Адаптивна верстка з TypeScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <h1>Адаптивна верстка з TypeScript</h1>
+        <p>Демонстрація бокового меню, яке змінюється залежно від ширини екрану.</p>
+    </header>
+
+    <button id="menuButton" class="menu-button hidden" aria-label="Відкрити меню">
+        ☰ Меню
+    </button>
+
+    <div class="layout">
+        <nav id="sidebar" class="sidebar">
+            <h2 class="sidebar__title">Навігація</h2>
+            <ul class="sidebar__list">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>Контент сторінки</h2>
+            <p>
+                Змініть ширину вікна браузера або ввімкніть режим адаптивного перегляду
+                в DevTools, щоб побачити, як змінюється розташування елементів.
+            </p>
+            <p>
+                На <strong>десктопі/планшеті</strong> ви бачите стаціонарну бокову панель.
+                На <strong>мобільному</strong> — бокова панель ховається,
+                а замість неї з’являється кнопка «Меню».
+            </p>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <small>Лабораторна робота №13. TypeScript + matchMedia.</small>
+    </footer>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
